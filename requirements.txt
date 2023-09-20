@@ -1,0 +1,9 @@
+torch==1.7.0
+torchvision==0.8.1
+timm==0.3.2
+mmcv==1.3.8
+
+
+!pip install timm==0.4.12 mmcv==1.3.8
+
+python  ./main.py --model pvt_tiny --data-set CIFAR --config ./configs/pvt/pvt_tiny.py --resume mdls/checkpoint.pth --data-path ./cifar-100-python
